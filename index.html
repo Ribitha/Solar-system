@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation-name: rotating;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            background-image: url(universe.avif);
+      
+    
+    }
+     .solar-system {
+      position: relative;
+      width: 1400px;
+      height: 1400px;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation-name: rotating;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+    }
+    .sun {
+      position: static;
+      top: 44%;
+      left: 47%;
+      height: 100px;
+      width: 100px;
+      background-image: url('sun.jpeg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+    .orbit {
+      position: absolute;
+      border: 3px solid gray;
+      border-radius: 50%;
+      
+    }
+    #orbit1{
+        height:180px;
+        width:180px;
+        animation-name: rotating;
+            
+    }
+    #orbit2
+    {
+        height:310px;
+        width:310px;
+        
+    }
+    #orbit3{
+        height:480px;
+        width:480px;
+        
+    }
+    #orbit4{
+        height:600px;
+        width:600px;
+        
+    }
+    #orbit5{
+        height:730px;
+        width:730px;
+        
+    }
+    #orbit6{
+        height:900px;
+        width:900px;
+        
+    }
+    #orbit7{
+        height:1070px;
+        width:1070px;
+        
+    }
+     #orbit8{
+        height:1200px;
+        width:1200px;
+        
+    }
+
+     .planet {
+      position: absolute;
+      border-radius: 50%;
+      background-size: cover;
+      animation: rotating 10s linear infinite;
+    }
+    #mercury{
+        height: 50px;
+        width: 50px;
+        left:54%;
+        background-image: url(Mercury.jpg);
+
+    }
+    #venus{
+        height: 68px;
+        width: 68px;
+        left:56%;
+        top:36%;
+        background-image: url(venus.jpeg);
+
+    }
+    #earth{
+        height: 70px;
+        width: 70px;
+        left:64%;
+        top:41%;
+        background-image: url(earth.jpeg);
+    }
+    #mars{
+        height: 40px;
+        width: 40px;
+        left:68%;
+        top:48%;
+        background-image: url(mars.jpg);
+    }
+    #jupiter{
+        height: 90px;
+        width: 90px;
+        left:69%;
+        top:25%;
+        background-image: url(jupiter.jpeg);
+    }
+    #saturn{
+        height: 80px;
+        width: 80px;
+        left:77%;
+        top:45%;
+        background-image: url(saturn.jpeg);
+    }
+    #uranus{
+        height: 40px;
+        width: 40px;
+        left:82%;
+        top:25%;
+        background-image: url(uranus.jpeg);
+    }
+    #neptune{
+        height: 50px;
+        width: 50px;
+        left:86%;
+        top:70%;
+        background-image: url(neptune.jpeg);
+    }
+    @keyframes rotating {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+  
+
+    </style>
+</head>
+<body>
+   
+    <div class="sun"></div>
+    <div class="orbit" id="orbit1"></div>
+    <div class="orbit" id="orbit2"></div>
+    <div class="orbit" id="orbit3"></div>
+    <div class="orbit" id="orbit4"></div>
+    <div class="orbit" id="orbit5"></div>
+    <div class="orbit" id="orbit6"></div>
+    <div class="orbit" id="orbit7"></div>
+    <div class="orbit" id="orbit8"></div>
+    <div class="planet" id="mercury"></div>
+    <div class="planet" id="venus"></div>
+    <div class="planet" id="earth"></div>
+    <div class="planet" id="mars"></div>
+    <div class="planet" id="jupiter"></div>
+    <div class="planet" id="saturn"></div>
+    <div class="planet" id="uranus"></div>
+    <div class="planet" id="neptune"></div>
+    
+
+</body>
+</html>
